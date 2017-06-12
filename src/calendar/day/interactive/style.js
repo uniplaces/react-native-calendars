@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 import * as defaultStyle from '../../../style';
 
-const FILLER_HEIGHT = 34;
+const FILLER_HEIGHT = 40;
 
 export default function styleConstructor(theme={}) {
   const appStyle = {...defaultStyle, ...theme};
@@ -34,11 +34,11 @@ export default function styleConstructor(theme={}) {
       flex: 1
     },
     text: {
-      marginTop: 7,
+      marginTop: 10,
       fontSize: 16,
       fontWeight: '300',
       color: appStyle.dayTextColor || '#2d4150',
-      backgroundColor: 'rgba(255, 255, 255, 0)'
+      backgroundColor: 'rgba(255, 255, 255, 0)',
     },
     todayText: {
       fontWeight: '500',
