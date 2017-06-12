@@ -18,8 +18,8 @@ export default function getStyle(theme={}) {
       color: appStyle.dayTextColor
     },
     calendar: {
-      paddingLeft: appStyle.calendarPaddingLeft || 15,
-      paddingRight: appStyle.calendarPaddingRight || 15
+      paddingLeft: appStyle.calendarPaddingLeft,
+      paddingRight: appStyle.calendarPaddingRight
     }
   });
 }

@@ -41,7 +41,8 @@ export default function(theme={}) {
       marginBottom: 7,
       width: 32,
       textAlign: 'center',
-      fontSize: 13,
+      fontWeight: appStyle.dayTextWeight || 200,
+      fontSize: appStyle.dayTextSize || 13,
       color: appStyle.textSectionTitleColor
     }
   });

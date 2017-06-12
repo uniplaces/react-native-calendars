@@ -12,8 +12,6 @@ export const textLinkColor = '#00adf5';
 export const textSecondaryColor = '#7a92a5';
 
 export const calendarBackground = foregroundColor;
-export const calendarPaddingLeft = 15;
-export const calendarPaddingRight = 15;
 export const textSectionTitleColor = '#b6c1cd';
 export const selectedDayBackgroundColor = textLinkColor;
 export const selectedDayTextColor = foregroundColor;
