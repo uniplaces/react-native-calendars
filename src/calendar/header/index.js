@@ -78,6 +78,18 @@ class CalendarHeader extends Component {
     if (this.props.showIndicator) {
       indicator = <ActivityIndicator />;
     }
+
+    weekDays = null;
+    if (!this.props.hideWeekDays) {
+      weekDays = (
+        <View style={this.style.week}>
+          {weekDaysNames.map((day, idx) => (
+            <Text key={idx} style={this.style.dayHeader}>{day}</Text>
+          ))}
+        </View>
+      )
+    }
+
     return (
       <View>
         <View style={this.style.header}>
@@ -90,11 +102,7 @@ class CalendarHeader extends Component {
           </View>
           {rightArrow}
         </View>
-        <View style={this.style.week}>
-          {weekDaysNames.map((day, idx) => (
-            <Text key={idx} style={this.style.dayHeader}>{day}</Text>
-          ))}
-        </View>
+        {weekDays}
       </View>
     );
   }
